@@ -1,6 +1,6 @@
 <?php
 
-// translations for Rectitudeopen/FilamentInfoAlert
+// translations for RectitudeOpen/FilamentInfoAlert
 return [
     //
 ];

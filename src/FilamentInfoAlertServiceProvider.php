@@ -1,6 +1,6 @@
 <?php
 
-namespace Rectitudeopen\FilamentInfoAlert;
+namespace RectitudeOpen\FilamentInfoAlert;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -13,8 +13,8 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rectitudeopen\FilamentInfoAlert\Commands\FilamentInfoAlertCommand;
-use Rectitudeopen\FilamentInfoAlert\Testing\TestsFilamentInfoAlert;
+use RectitudeOpen\FilamentInfoAlert\Commands\FilamentInfoAlertCommand;
+use RectitudeOpen\FilamentInfoAlert\Testing\TestsFilamentInfoAlert;
 
 class FilamentInfoAlertServiceProvider extends PackageServiceProvider
 {

@@ -1,5 +1,5 @@
 <?php
 
-namespace Rectitudeopen\FilamentInfoAlert;
+namespace RectitudeOpen\FilamentInfoAlert;
 
 class FilamentInfoAlert {}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rectitudeopen\FilamentInfoAlert\Database\Factories;
+namespace RectitudeOpen\FilamentInfoAlert\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

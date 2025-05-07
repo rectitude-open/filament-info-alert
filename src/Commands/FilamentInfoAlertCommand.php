@@ -1,6 +1,6 @@
 <?php
 
-namespace Rectitudeopen\FilamentInfoAlert\Commands;
+namespace RectitudeOpen\FilamentInfoAlert\Commands;
 
 use Illuminate\Console\Command;
 

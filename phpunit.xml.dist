@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Rectitudeopen Test Suite">
+        <testsuite name="RectitudeOpen Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

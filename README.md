@@ -46,8 +46,8 @@ return [
 ## Usage
 
 ```php
-$filamentInfoAlert = new Rectitudeopen\FilamentInfoAlert();
-echo $filamentInfoAlert->echoPhrase('Hello, Rectitudeopen!');
+$filamentInfoAlert = new RectitudeOpen\FilamentInfoAlert();
+echo $filamentInfoAlert->echoPhrase('Hello, RectitudeOpen!');
 ```
 
 ## Testing

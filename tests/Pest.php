@@ -1,5 +1,5 @@
 <?php
 
-use Rectitudeopen\FilamentInfoAlert\Tests\TestCase;
+use RectitudeOpen\FilamentInfoAlert\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

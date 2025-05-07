@@ -1,6 +1,6 @@
 <?php
 
-// config for Rectitudeopen/FilamentInfoAlert
+// config for RectitudeOpen/FilamentInfoAlert
 return [
 
 ];

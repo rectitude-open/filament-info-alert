@@ -1,6 +1,6 @@
 <?php
 
-namespace Rectitudeopen\FilamentInfoAlert\Testing;
+namespace RectitudeOpen\FilamentInfoAlert\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 
