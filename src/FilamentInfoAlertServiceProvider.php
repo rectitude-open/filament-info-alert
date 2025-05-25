@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RectitudeOpen\FilamentInfoAlert;
 
 use Filament\Support\Assets\AlpineComponent;
@@ -10,11 +12,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use RectitudeOpen\FilamentInfoAlert\Commands\FilamentInfoAlertCommand;
+use RectitudeOpen\FilamentInfoAlert\Testing\TestsFilamentInfoAlert;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RectitudeOpen\FilamentInfoAlert\Commands\FilamentInfoAlertCommand;
-use RectitudeOpen\FilamentInfoAlert\Testing\TestsFilamentInfoAlert;
 
 class FilamentInfoAlertServiceProvider extends PackageServiceProvider
 {
@@ -30,12 +32,12 @@ class FilamentInfoAlertServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name(static::$name)
-            ->hasCommands($this->getCommands())
+            // ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
-                    ->publishConfigFile()
-                    ->publishMigrations()
-                    ->askToRunMigrations()
+                    // ->publishConfigFile()
+                    // ->publishMigrations()
+                    // ->askToRunMigrations()
                     ->askToStarRepoOnGitHub('rectitude-open/filament-info-alert');
             });
 
@@ -63,27 +65,27 @@ class FilamentInfoAlertServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         // Asset Registration
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::register(
+        //     $this->getAssets(),
+        //     $this->getAssetPackageName()
+        // );
 
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::registerScriptData(
+        //     $this->getScriptData(),
+        //     $this->getAssetPackageName()
+        // );
 
-        // Icon Registration
-        FilamentIcon::register($this->getIcons());
+        // // Icon Registration
+        // FilamentIcon::register($this->getIcons());
 
-        // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-info-alert/{$file->getFilename()}"),
-                ], 'filament-info-alert-stubs');
-            }
-        }
+        // // Handle Stubs
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-info-alert/{$file->getFilename()}"),
+        //         ], 'filament-info-alert-stubs');
+        //     }
+        // }
 
         // Testing
         Testable::mixin(new TestsFilamentInfoAlert);
@@ -101,8 +103,8 @@ class FilamentInfoAlertServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-info-alert', __DIR__ . '/../resources/dist/components/filament-info-alert.js'),
-            Css::make('filament-info-alert-styles', __DIR__ . '/../resources/dist/filament-info-alert.css'),
-            Js::make('filament-info-alert-scripts', __DIR__ . '/../resources/dist/filament-info-alert.js'),
+            // Css::make('filament-info-alert-styles', __DIR__ . '/../resources/dist/filament-info-alert.css'),
+            // Js::make('filament-info-alert-scripts', __DIR__ . '/../resources/dist/filament-info-alert.js'),
         ];
     }
 
