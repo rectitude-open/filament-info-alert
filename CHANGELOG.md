@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/rectitude-open/filament-info-alert/compare/v1.0.0...v1.0.1) (2025-05-25)
+
+
+### Bug Fixes
+
+* update namespace for InfoAlert component ([4b2596a](https://github.com/rectitude-open/filament-info-alert/commit/4b2596ad29edc7189d44a1fbf3d4572cc2425ee2))
+
 ## 1.0.0 (2025-05-25)
 
 
