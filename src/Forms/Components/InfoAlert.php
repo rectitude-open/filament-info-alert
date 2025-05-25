@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Forms\Components;
+namespace RectitudeOpen\FilamentInfoAlert\Forms\Components;
 
 use Filament\Forms\Components\Field;
 
